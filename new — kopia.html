@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='pl'>
+<head>
+
+<meta charset="utf-8">
+
+
+</head>
+<body>
+
+
+
+<svg width='1200' height='800'>
+<path id="droga" d="M300,300 C50,0 550,0 300,300 C0,700 600,700 300,300" stroke='red' fill='none'/>
+
+<circle cx='0' cy='0' r='10' fill='red'>
+    <animateMotion 
+	dur="6s" 
+	repeatCount="indefinite">
+	<mpath href="#droga"/>
+    </animateMotion>
+</circle>
+
+
+<pre>
+repeatCount='indefinite' -nieskonczonosc
+fill='freeze'- kolor zostaje na koncu 
+</pre>
+</body>
+</html>

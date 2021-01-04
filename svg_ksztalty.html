@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang='pl'>
+<head>
+<title>svg</title>
+<meta charset="utf-8">
+
+
+</head>
+<body>
+
+<svg width='1000' height='1000' >
+
+
+
+
+<path id='droga' d='M100,100 L600,100' stroke='none'  />
+<path id='droga2' d='M600,100 L600,600' stroke='none'  />
+<path id='droga3' d='M600,600 L100,600' stroke='none'  />
+<path id='droga4' d='M100,600 L100,100' stroke='none'  />
+
+
+
+
+<rect x='0' y='0' width='100' height='100' id='square' fill='teal' >
+
+<animateTransform
+attributeName='transform'
+type='rotate'
+begin='0s'
+from='0,50,50'
+to='360,50,50'
+dur='3s'
+repeatCount='indefinite'
+/>
+
+<animateMotion
+dur='4s' 
+repeatCount='1'>
+<mpath href='#droga'/>
+</animateMotion>
+
+<animate
+attributeName='opacity'
+begin='3s'
+from='100' to='0' 
+dur='1s'
+repeatCount='1'
+fill='freeze'
+/>
+</rect>
+
+
+
+<polygon points='50,0 0,100 100,100' fill='lightgreen' opacity='0'>
+
+<animateTransform
+attributeName='transform'
+type='rotate'
+begin='0s'
+from='0,50,50'
+to='360,50,50'
+dur='3s'
+repeatCount='indefinite'
+/>
+
+<animateMotion
+begin='4s'
+dur='4s'
+repeatCount='1'>
+<mpath href='#droga2'/>
+</animateMotion>
+
+<animate
+attributeName='opacity'
+begin='4s'
+from='0' to='100' 
+dur='1s'
+repeatCount='1'
+fill='freeze'
+/>
+
+<animate
+attributeName='opacity'
+begin='7s'
+from='100' to='0' 
+dur='1s'
+repeatCount='1'
+fill='freeze'
+/>
+
+</polygon>
+
+
+<ellipse cx='50' cy='50' rx='30' ry='50' fill='red' opacity='0'>
+
+<animateTransform
+attributeName='transform'
+type='rotate'
+begin='0s'
+from='0,50,50'
+to='360,50,50'
+dur='3s'
+repeatCount='indefinite'
+/>
+
+<animateMotion
+begin='8s'
+dur='4s'
+repeatCount='1'>
+<mpath href='#droga3'/>
+</animateMotion>
+
+<animate
+attributeName='opacity'
+begin='8s'
+from='0' to='100' 
+dur='1s'
+repeatCount='1'
+fill='freeze'
+/>
+
+<animate
+attributeName='opacity'
+begin='11s'
+from='100' to='0' 
+dur='1s'
+repeatCount='1'
+fill='freeze'
+/>
+
+</ellipse>
+
+<rect x='0' y='0' width='50' height='100' fill='yellow' opacity='0'>
+
+<animateTransform
+attributeName='transform'
+type='rotate'
+begin='0s'
+from='0,25,50'
+to='360,25,50'
+dur='3s'
+repeatCount='indefinite'
+/>
+
+<animateMotion
+begin='12s'
+dur='4s'
+repeatCount='1'>
+<mpath href='#droga4'/>
+</animateMotion>
+
+<animate
+attributeName='opacity'
+begin='12s'
+from='0' to='100' 
+dur='1s'
+repeatCount='1'
+fill='freeze'
+/>
+
+<animate
+attributeName='opacity'
+begin='15s'
+from='100' to='0' 
+dur='1s'
+repeatCount='1'
+fill='freeze'
+/>
+
+</rect>
+
+</svg>
+</body>
+</html>
+
+

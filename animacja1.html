@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='pl'>
+<head>
+
+<meta charset="utf-8">
+
+
+</head>
+<body>
+
+
+<svg width='1200' height='800' >
+
+<rect x='100' y='100' width='60' height='30' stroke='red'  fill='yellow'>
+<animate
+attributeName='x'
+begin='click'
+from='100' to='500'
+dur='1s'
+repeatCount='2'
+/>
+
+<animate
+attributeName='y'
+begin='click'
+from='100' to='500'
+dur='1s'
+repeatCount='2'
+/>
+
+<animate
+attributeName='fill'
+begin='click'
+from='yellow' to='red' 
+dur='1s'
+repeatCount='indefinite'
+fill='freeze'
+/>
+</rect>
+
+<pre>
+repeatCount='indefinite' -nieskonczonosc
+fill='freeze'- kolor zostaje na koncu 
+</pre>
+</body>
+</html>
